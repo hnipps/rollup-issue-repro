@@ -9,7 +9,7 @@
       "dependencies": "*",
       "devDependencies": "*"
     },
-    "tsconfig.base.json": "*",
+    "tsconfig.json": "*",
     "tslint.json": "*",
     "nx.json": "*"
   },
@@ -17,9 +17,21 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "lib-a": {
+      "tags": []
+    },
+    "main-lib": {
+      "tags": []
+    }
+  }
 }

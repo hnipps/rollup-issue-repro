@@ -15,7 +15,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@rollup-issue-repro/main-lib": ["libs/main-lib/src/index.ts"],
+      "@rollup-issue-repro/main-lib/loader": ["dist/libs/main-lib/loader"],
+      "@rollup-issue-repro/lib-a": ["dist/libs/lib-a"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
